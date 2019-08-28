@@ -8,24 +8,25 @@ class Circle2D {
     private double radius;
 
     public double getX(){
+
         return x;
     }
 
     public double getY(){
+
         return y;
     }
 
     // 	A data field radius with a get method.
     public double getRadius(){
+
         return radius;
     }
 
 
     // A no-arg constructor that creates a default circle with (0, 0) for (x, y) and 1 for radius.
     public Circle2D(){
-        x = 0;
-        y = 0;
-        radius = 1;
+        this(0,0,1);
     }
 
 
@@ -39,12 +40,14 @@ class Circle2D {
 
     // A method getArea() that returns the area of the circle.
     public double getArea(){
+
         return Math.PI * Math.pow(radius, 2);
     }
 
 
     // A method getPerimeter() that returns the perimeter of the circle.
     public double getPerimeter(){
+
         return 2 * Math.PI * radius;
     }
 
